@@ -1,0 +1,242 @@
+/* General Styling */
+body {
+    font-family:'Arial', 'Helvetica', 'Verdana', 'Roboto', 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    background: #f8f0e3;
+    color: #3d2b1f;
+    line-height: 1.6;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style for text backgrounds */
+.text-background {
+  background-color: rgba(255, 255, 255, 0.4); /* 70% opacity white */
+  padding: 0.2rem 0.5rem; /* Adjust padding for spacing */
+  display: inline-block; /* Make the span only as wide as the text */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+
+header {
+    background: linear-gradient(to right, #ff6f69, #ffcc5c);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+     /* Enable flexbox layout */
+    align-items: left; /* Vertically align items (text and image) in the center */
+}
+
+header img {
+    margin-left: auto; /* Push the image to the right */
+    height: 100%; /* Match the image height to the container's height */
+    width: auto; /* Maintain the image's aspect ratio */
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, Verdana, Roboto, 'Open Sans', sans-serif;
+}
+
+section {
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+nav {
+    background: #ffcc5c; /* Yellowish orange background */
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6f69;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9980;
+}
+
+#general {
+    background-color: #8ebced; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+
+/* Style all sections within #general */
+#general section { 
+    border: 1px solid #8ebced; /* Add a light gray border */
+    padding: 3rem; /* Add some internal padding */
+    border-radius: 10px;
+    margin-bottom: 1rem; /* Add some space between sections */
+    border-radius: 8px; /* Slightly round the section corners */
+}
+
+
+#rules {
+    background-color: #d93030; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; /* Example: Dark red */
+  }
+  
+#about {
+    background-color: #8ebced; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+
+#gallery {
+    background-color: #8ebced; /* Light blue pastel */
+}
+
+#gallery .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+#gallery img {
+    width: 200px !important;    /* Set desired width */
+    height:200px !important;   /* Set desired height */
+    object-fit: cover;  /* Optional: Crop and maintain aspect ratio */
+  }
+  
+
+/* Specific Section Styling */
+#about p {
+    text-indent: 2em;
+    font-style: italic;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+}
+
+#features li {
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+#features li::before {
+    content: "\2728";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffcc5c; 
+}
+
+
+#rules ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border: 3px solid #e9ce97; /* Light beige border */
+}
+
+#gallery img:hover {
+    transform: scale(1.08) rotate(3deg); /* More playful hover */
+}
+
+#community {
+    background: #e9ce97; /* Light beige */
+}
+
+#howtojoin ol {
+    list-style: decimal-leading-zero;
+    margin-left: 2rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a { /* Style for links */
+    color: #ff6f69; /* Orange */
+    text-decoration: none;
+}
+
+#download-links a {
+    display: block; /* Make each link a block-level element */
+    margin-bottom: 0.5rem; /* Add some space between links */
+}
+
+#download {
+    background-color: #da9aed; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+#stats {
+    background-color: #F092D7 ; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+
+#chat {
+    background-color:  #83F5A9  ; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+
+#monitoring {
+    background-color: #FEC87E   ; /* Light blue pastel */
+    border-radius: 10px; 
+    padding: 3rem;
+    text-align: left; 
+}
+
+
+/* Footer */
+footer {
+    background: #3d2b1f; /* Dark brown */
+    color: #e9ce97; /* Light beige */
+    text-align: center;
+    padding: 1rem;
+}
