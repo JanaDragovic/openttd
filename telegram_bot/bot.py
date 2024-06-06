@@ -48,7 +48,7 @@ Available commands:
     await context.bot.send_message(chat_id=update.effective_chat.id, text=available_commands)
 
 def main():
-    application = ApplicationBuilder().token('7202415467:AAH_XVblGMVCzQez864MEt9Bu6hSS50Ta50').build()
+    application = ApplicationBuilder().token('<TOKEN_VALUE>').build()
     
     join_handler = CommandHandler('join', join)
     application.add_handler(join_handler)
